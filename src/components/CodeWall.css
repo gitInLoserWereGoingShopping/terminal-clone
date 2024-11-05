@@ -1,0 +1,43 @@
+.hackerCodeWall {
+  font-family: monospace;
+  display: flex;
+  flex-wrap: wrap;
+  transition: transform 0.1s ease-in-out; /* Add transition for smooth shake */
+  position: relative; /* Ensure the cube is positioned within the container */
+  overflow: hidden; /* Prevent cube from overflowing */
+}
+
+.hackerCodeWall.shake {
+  transform: translateX(25px) translateY(-5px); /* Adjust values for shake intensity */
+}
+
+@keyframes scatter {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(8px, -8px); /* Adjust values for scatter intensity */
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes swirl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust value for bounce height */
+  }
+}

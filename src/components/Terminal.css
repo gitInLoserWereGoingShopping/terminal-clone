@@ -1,0 +1,10 @@
+.terminal {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  padding: 10px;
+}
+
+.prompt {
+  color: green;
+}
